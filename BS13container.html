@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      div {
+        margin-top: 10px;
+        background-color: blue;
+      }
+      .container2 {
+        margin-top: 10px;
+        background-color: darkmagenta;
+      }
+      .d-flex {
+        background-color: forestgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>Inline flex</h2>
+      <p>to create an inline flexbox container,use the d-inline-flex class:</p>
+      <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-1 bg-danger">flex item 1</div>
+        <div class="p-1 bg-primary">flex item 2</div>
+        <div class="p-1 bg-warning">flex item 3</div>
+        <div class="p-1 bg-success">flex item 4</div>
+      </div>
+    </div>
+    <div>
+      <div class="d-flex p-2">Im a flex container!</div>
+    </div>
+    <div class="container2">
+      <div class="d-inline-flex p-2">Im an infinite flexbox container</div>
+    </div>
+    <!-- responsive variations also exits for .d-flex and  .d-inline-flex
+
+
+.d-xl-flex
+.d-xl-inline-flex
+.d-xxl-flex
+.d-xxl-inline-flex
+.d-md-inline-flex
+.d-md-flex
+.d-sm-inline-flex
+.d-flex
+.d-inline-flex
+.d-sm-flex
+.d-lg-flex
+.d-lg- inline-flex
+
+set the direction of flex times in a flex container with direction utilities.in most cases u can omit the horizontal class here as the browser default is row.However,you may encounter situations where you neede to explicitly set this value(like responsive layouts)
+
+use .flex-row to set a horizontal direction (the browser default),or
+.flex-row-reverse to start the horizontaldirection from the oppoaite side. -->
+
+    <div class="d-flex flex-row mb-3">
+      <div class="p-2">flex item 1</div>
+      <div class="p-2">flex item 2</div>
+      <div class="p-2">flex item 3</div>
+    </div>
+    <div class="d-flex flex-row-reverse">
+      <div class="p-2">flex item 1</div>
+      <div class="p-2">flex item 2</div>
+      <div class="p-2">flex item 3</div>
+    </div>
+    <div class="d-flex flex-column mb-3">
+      <div class="p-2">flex item 1</div>
+      <div class="p-2">flex item 2</div>
+      <div class="p-2">flex item 3</div>
+    </div>
+    <div class="d-flex flex-column-reverse">
+      <div class="p-2">flex item 1</div>
+      <div class="p-2">flex item 2</div>
+      <div class="p-2">flex item 3</div>
+    </div>
+    <!-- Responsive variations also exist for flex-direction
+.flex-row
+.flex-row-reverse
+.flex-column
+.flex-column-reverse
+ 
+Justify content
+Use justify-content utilities on flexbox containers to change the alignment of flex items o the main axis(the x-axis to start,y-axis if flex-direction:column).
+chosse from start(browser default),end,center,etween,around,or evenly. -->
+
+    <div class="d-flex justify-content-start">flex-1</div>
+    <div class="d-flex justify-content-end">flex-2</div>
+    <div class="d-flex justify-content-center">flex-3</div>
+    <div class="d-flex justify-content-between">flex-4</div>
+    <div class="d-flex justify-content-around">flex-5</div>
+    <div class="d-flex justify-content-evenly">flex-6</div>
+    <div class="d-flex justify-content-xxl-evenly">flex-7</div>
+
+    <!-- responsive variations also exist for justify-content.
+.justify-content-start
+.justify-content-end
+.justify-content-center
+.justify-content-between
+.justify-content-around
+.justify-content-evenly -->
+  </body>
+</html>

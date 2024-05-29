@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   
+   
+    <script>
+        $(document).ready(function (){
+          $("#mymodal").modal("show");  
+        });
+    </script>
+    <style>
+        .modal-content{
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+   <div id="mymodal" class="modal fade">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Confirmation</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>Do you want to save changes to this document before closing?</p>
+            <p class="text-success"><small>If you dont save,your contents will be lost</small></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Save & close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close without chnanges</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">cancel</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+   </div>
+</body>
+</html>
